@@ -4,7 +4,7 @@ from django.shortcuts import render
 from .models import Topic
 from .serializers import TopicSerializer
 from rest_framework import generics, filters
-from django.http import HttpResponse
+
 
 class TopicListCreate(generics.ListCreateAPIView):
 	search_fields = ['topic','topic_subject', 'keyWords','description', 'image1', 'image2','image3', 'image4']
