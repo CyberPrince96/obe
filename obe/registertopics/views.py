@@ -11,9 +11,3 @@ class TopicListCreate(generics.ListCreateAPIView):
 	filter_backends = (filters.SearchFilter,)
 	queryset = Topic.objects.all()
 	serializer_class = TopicSerializer
-
-
-
-def renderImg(request,imgname):
-	image_data = open("images/"+imgname, "rb").read()
-	return HttpResponse(image_data, content_type="image/png")
