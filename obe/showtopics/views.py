@@ -10,5 +10,5 @@ def homepage(request):
 
 
 def renderImg(request,imgname):
-	image_data = open("media/images/"+imgname, "rb").read()
+	image_data = open("/home/ubuntu/obe/obe/media/images/"+imgname, "rb").read()
 	return HttpResponse(image_data, content_type="image/png")
