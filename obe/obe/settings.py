@@ -25,7 +25,7 @@ SECRET_KEY = '_653ca*7b4=vg&s%1k#+l4+h$*#dl2u0et)lrt2yo1^9(^3r&4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['obe.electroplorers.com']
+ALLOWED_HOSTS = ['obe.electroplorers.com','localhost']
 
 
 # Application definition
@@ -124,3 +124,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
