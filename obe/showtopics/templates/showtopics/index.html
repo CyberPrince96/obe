@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .hide
+    {
+      display: none;
+    }
+    .alert
+    {
+      cursor: pointer;
+    }
+    .container-fluid, body
+    {
+      background: purple;
+    }
+    .all-container
+    {
+      margin: 20px;
+      padding: 20px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px grey;
+    }
+    .search-results
+    {
+      margin: 10px;
+      padding: 10px;
+      max-width: 98%;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+    }
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .topics-individual
+      {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px grey;
+        border: 1px ridge grey;
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        text-align: justify;
+      }
+      button
+      {
+        padding: 20px;
+        margin: 10px;
+      }
+  </style>
+</head>
+<body bgcolor="purple">
+  
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-lg all-container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <h3 class="text-primary" style="width: 100%; text-align: center;">M.Sc. Electronics IV Sem Topic Wise Explanations</h3>
+          <form>
+            <div class="form-group">
+              <label>Subject:</label>
+              <select class="form-control" id="subjects" oninput="get_topics()">
+                <option disabled selected>--Select Subject--</option>
+                <option value="QuantumElectronics">Quantum Electronics</option>
+                <option value="VLSICircuitDesignandDeviceModeling">VLSI Circuit Design and Device Modeling</option>
+                <option value="ModernCommunicationSystems">Modern Communication Systems</option>
+                <option value="MicrowaveElectronics">Microwave Electronics</option>
+              </select>              
+            </div>
+            <div class="form-group">
+              <label>Keywords:</label>
+              <input class="form-control" type="text" name="keywords" id="keywords"  oninput="get_topics()">              
+            </div>        
+            
+          </form>          
+        </div>
+        <div class="col-lg-1"></div>
+      </div>  
+      <div class="row">
+        <div class="col-lg-12 search-results">
+          <div class="loader hide" id="loader"></div>
+          <div id="search-results"></div>
+
+          
+        </div>        
+      </div>         
+    </div>    
+  </div>
+          
+</div>
+
+</body>
+<script type="text/javascript">
+window.topics_data = new Array();
+ function get_topics()
+ {
+  var data = 'search='+$("#subjects").val()+','+$("#keywords").val();
+   $.ajax({
+      url: "./get-topics/topic",
+      data:data,
+      beforeSend: function( xhr ) {
+        $("#search-results").html('');
+        $("#loader").removeClass("hide");
+
+      }
+    })
+      .done(function( data ) {
+        $("#loader").addClass("hide");
+        topics = data;
+        var html='';
+        for(i=0;i<topics.length;i++)
+        {
+          html+='<div class="alert alert-success" onclick="get_detailed_view('+topics[i].id+')">'+
+                  '<strong>'+topics[i].topic+': </strong>'+topics[i].keyWords+
+                '</div>';
+          window.topics_data[topics[i].id]=topics[i];      
+        }
+        $("#search-results").html(html);        
+        if ( console && console.log ) {
+          console.log( "Sample of data:", data );
+        }
+      });
+ } 
+
+
+function get_detailed_view(id)
+{
+  html = '<button onclick="get_all_topics_content()" class = "btn btn-primary">Back To Results</button><br><div class="topics-individual">';
+  html+='<h4> Topic: ' + window.topics_data[id].topic +' </h4><p>' + window.topics_data[id].description +'</p>';
+  if (window.topics_data[id].image1) {html+='<div><img alt="Loading Image..." src="'+window.topics_data[id].image1 +'"></div>';}
+  if (window.topics_data[id].image2) {html+='<div><img alt="Loading Image..." src="'+window.topics_data[id].image2 +'"></div>';}
+  
+  if (window.topics_data[id].image3) {html+='<div><img alt="Loading Image..." src="'+window.topics_data[id].image3 +'"></div>';}
+  if (window.topics_data[id].image4) {html+='<div><img alt="Loading Image..." src="'+window.topics_data[id].image4 +'"></div>';}  
+  html+='</div>';
+  $("#search-results").html(html);
+}
+
+
+function get_all_topics_content()
+{
+  html='';
+  window.topics_data.forEach(function(topics){
+          html+='<div class="alert alert-success" onclick="get_detailed_view('+topics.id+')">'+
+                  '<strong>'+topics.topic+': </strong>'+topics.keyWords+
+                '</div>';    
+        });
+  
+        
+  $("#search-results").html(html);   
+}
+ 
+  
+</script>
+</html>
