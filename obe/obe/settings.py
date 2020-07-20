@@ -25,7 +25,7 @@ SECRET_KEY = '_653ca*7b4=vg&s%1k#+l4+h$*#dl2u0et)lrt2yo1^9(^3r&4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['obe.electroplorers.com','localhost']
+ALLOWED_HOSTS = ['obe.electroplorers.com','localhost','obe.pawan']
 
 
 # Application definition

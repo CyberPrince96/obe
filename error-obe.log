@@ -1,0 +1,41 @@
+[Mon Jul 20 05:16:49.557482 2020] [wsgi:error] [pid 6326] [remote 127.0.0.1:33296] Invalid HTTP_HOST header: 'obe.pawan'. You may need to add 'obe.pawan' to ALLOWED_HOSTS.
+[Mon Jul 20 05:16:49.740057 2020] [wsgi:error] [pid 6326] [remote 127.0.0.1:33296] Bad Request: /
+[Mon Jul 20 05:16:50.153303 2020] [wsgi:error] [pid 6326] [remote 127.0.0.1:33298] Invalid HTTP_HOST header: 'obe.pawan'. You may need to add 'obe.pawan' to ALLOWED_HOSTS.
+[Mon Jul 20 05:16:50.270596 2020] [wsgi:error] [pid 6326] [remote 127.0.0.1:33298] Bad Request: /favicon.ico
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Jul 20 05:25:11.999791 2020] [wsgi:error] [pid 6663] [remote 127.0.0.1:33342] Invalid HTTP_HOST header: 'obe.pawan'. You may need to add 'obe.pawan' to ALLOWED_HOSTS.
+[Mon Jul 20 05:25:12.116746 2020] [wsgi:error] [pid 6663] [remote 127.0.0.1:33342] Bad Request: /
+[Mon Jul 20 05:25:12.586637 2020] [wsgi:error] [pid 6663] [remote 127.0.0.1:33344] Invalid HTTP_HOST header: 'obe.pawan'. You may need to add 'obe.pawan' to ALLOWED_HOSTS.
+[Mon Jul 20 05:25:12.722709 2020] [wsgi:error] [pid 6663] [remote 127.0.0.1:33344] Bad Request: /favicon.ico
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Jul 20 05:30:36.125173 2020] [wsgi:error] [pid 7421] [remote 127.0.0.1:33406] Not Found: /favicon.ico
+Exception ignored in: <function Local.__del__ at 0x7fab45755940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45755940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
