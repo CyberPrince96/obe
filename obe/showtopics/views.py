@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from obe import settings
+import os
 # Create your views here.
 
 def homepage(request):
@@ -10,5 +12,6 @@ def homepage(request):
 
 
 def renderImg(request,imgname):
-	image_data = open("/home/ubuntu/obe/obe/media/images/"+imgname, "rb").read()
+	uri = os.path.join(settings.BASE_DIR,"media/images/")
+	image_data = open(uri+imgname, "rb").read()
 	return HttpResponse(image_data, content_type="image/png")

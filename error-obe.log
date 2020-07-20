@@ -63,3 +63,157 @@ NameError: name 'TypeError' is not defined
 [Mon Jul 20 06:51:24.517090 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34202]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
 [Mon Jul 20 06:51:24.517105 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34202]     image_data = open("/home/ubuntu/obe/obe/media/images/"+imgname, "rb").read()
 [Mon Jul 20 06:51:24.517121 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34202] FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/obe/obe/media/images/ledvslaser.png'
+[Mon Jul 20 07:01:25.383231 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34394] Not Found: /favicon.ico
+[Mon Jul 20 07:01:29.298173 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406] Internal Server Error: /media/images/ledvslaser2.png
+[Mon Jul 20 07:01:29.298283 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406] Traceback (most recent call last):
+[Mon Jul 20 07:01:29.298306 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:01:29.298326 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]     response = get_response(request)
+[Mon Jul 20 07:01:29.298345 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:01:29.298365 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:01:29.298383 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:01:29.298459 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:01:29.298478 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
+[Mon Jul 20 07:01:29.298496 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406]     image_data = open("/home/ubuntu/obe/obe/media/images/"+imgname, "rb").read()
+[Mon Jul 20 07:01:29.298514 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34406] FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/obe/obe/media/images/ledvslaser2.png'
+[Mon Jul 20 07:01:29.300473 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404] Internal Server Error: /media/images/ledvslaser.png
+[Mon Jul 20 07:01:29.300533 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404] Traceback (most recent call last):
+[Mon Jul 20 07:01:29.300555 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:01:29.300574 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]     response = get_response(request)
+[Mon Jul 20 07:01:29.300591 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:01:29.300610 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:01:29.300627 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:01:29.300645 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:01:29.300663 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
+[Mon Jul 20 07:01:29.300681 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404]     image_data = open("/home/ubuntu/obe/obe/media/images/"+imgname, "rb").read()
+[Mon Jul 20 07:01:29.300699 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34404] FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/obe/obe/media/images/ledvslaser.png'
+[Mon Jul 20 07:01:59.049772 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408] Internal Server Error: /media/images/ledvslaser.png
+[Mon Jul 20 07:01:59.049872 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408] Traceback (most recent call last):
+[Mon Jul 20 07:01:59.049887 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:01:59.049901 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]     response = get_response(request)
+[Mon Jul 20 07:01:59.049913 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:01:59.049926 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:01:59.049939 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:01:59.049951 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:01:59.050045 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
+[Mon Jul 20 07:01:59.050058 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408]     image_data = open("/home/ubuntu/obe/obe/media/images/"+imgname, "rb").read()
+[Mon Jul 20 07:01:59.050131 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:34408] FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/obe/obe/media/images/ledvslaser.png'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fab44b08a60>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Jul 20 07:04:18.705506 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412] Internal Server Error: /media/images/ledvslaser.png
+[Mon Jul 20 07:04:18.705622 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412] Traceback (most recent call last):
+[Mon Jul 20 07:04:18.705639 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:04:18.705653 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]     response = get_response(request)
+[Mon Jul 20 07:04:18.705666 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:04:18.705679 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:04:18.705692 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:04:18.705706 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:04:18.705719 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
+[Mon Jul 20 07:04:18.705732 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412]     image_data = open("media/images/"+imgname, "rb").read()
+[Mon Jul 20 07:04:18.705746 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34412] FileNotFoundError: [Errno 2] No such file or directory: 'media/images/ledvslaser.png'
+[Mon Jul 20 07:05:08.758669 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420] Internal Server Error: /media/images/ledvslaser2.png
+[Mon Jul 20 07:05:08.758787 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420] Traceback (most recent call last):
+[Mon Jul 20 07:05:08.758804 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:05:08.758819 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]     response = get_response(request)
+[Mon Jul 20 07:05:08.758832 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:05:08.758847 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:05:08.758860 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:05:08.758898 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:05:08.758912 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
+[Mon Jul 20 07:05:08.758924 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420]     image_data = open("media/images/"+imgname, "rb").read()
+[Mon Jul 20 07:05:08.758937 2020] [wsgi:error] [pid 11623] [remote 127.0.0.1:34420] FileNotFoundError: [Errno 2] No such file or directory: 'media/images/ledvslaser2.png'
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Jul 20 07:05:34.480394 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426] Internal Server Error: /media/images/ledvslaser2.png
+[Mon Jul 20 07:05:34.480514 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426] Traceback (most recent call last):
+[Mon Jul 20 07:05:34.480530 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:05:34.480543 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]     response = get_response(request)
+[Mon Jul 20 07:05:34.480555 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:05:34.480568 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:05:34.480580 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:05:34.480592 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:05:34.480604 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
+[Mon Jul 20 07:05:34.480616 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426]     image_data = open("../media/images/"+imgname, "rb").read()
+[Mon Jul 20 07:05:34.480629 2020] [wsgi:error] [pid 11724] [remote 127.0.0.1:34426] FileNotFoundError: [Errno 2] No such file or directory: '../media/images/ledvslaser2.png'
+Exception ignored in: <function Local.__del__ at 0x7fab45755940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45755940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45755940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Jul 20 07:06:07.421288 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428] Internal Server Error: /media/images/ledvslaser2.png
+[Mon Jul 20 07:06:07.421429 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428] Traceback (most recent call last):
+[Mon Jul 20 07:06:07.421445 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:06:07.421458 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]     response = get_response(request)
+[Mon Jul 20 07:06:07.421470 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:06:07.421484 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:06:07.421496 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:06:07.421509 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:06:07.421522 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 13, in renderImg
+[Mon Jul 20 07:06:07.421534 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428]     image_data = open("../../media/images/"+imgname, "rb").read()
+[Mon Jul 20 07:06:07.421546 2020] [wsgi:error] [pid 11800] [remote 127.0.0.1:34428] FileNotFoundError: [Errno 2] No such file or directory: '../../media/images/ledvslaser2.png'
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Jul 20 07:10:23.587187 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532] Internal Server Error: /media/images/ledvslaser2.png
+[Mon Jul 20 07:10:23.587300 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532] Traceback (most recent call last):
+[Mon Jul 20 07:10:23.587316 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Jul 20 07:10:23.587330 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]     response = get_response(request)
+[Mon Jul 20 07:10:23.587343 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Jul 20 07:10:23.587358 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]     response = self.process_exception_by_middleware(e, request)
+[Mon Jul 20 07:10:23.587371 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Jul 20 07:10:23.587385 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Jul 20 07:10:23.587398 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]   File "/home/pawan/projects/obe/obe/showtopics/views.py", line 15, in renderImg
+[Mon Jul 20 07:10:23.587411 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532]     uri = os.path.join(BASE_DIR,"media/images/")
+[Mon Jul 20 07:10:23.587424 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34532] NameError: name 'BASE_DIR' is not defined
+[Mon Jul 20 07:10:23.963027 2020] [wsgi:error] [pid 12065] [remote 127.0.0.1:34534] Not Found: /favicon.ico
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab45756940>
+Traceback (most recent call last):
+  File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
