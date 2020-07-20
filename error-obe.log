@@ -39,3 +39,4 @@ Exception ignored in: <function Local.__del__ at 0x7fab45755940>
 Traceback (most recent call last):
   File "/home/pawan/projects/obe/venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
 NameError: name 'TypeError' is not defined
+[Mon Jul 20 05:48:53.052747 2020] [wsgi:error] [pid 7765] [remote 127.0.0.1:33554] Not Found: /favicon.ico
