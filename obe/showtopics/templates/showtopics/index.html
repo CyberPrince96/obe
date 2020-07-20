@@ -174,11 +174,11 @@ function get_detailed_view(id)
 {
   html = '<button onclick="get_all_topics_content()" class = "btn btn-primary">Back To Results</button><br><div class="topics-individual">';
   html+='<h4> Topic: ' + window.topics_data[id].topic +' </h4><p>' + window.topics_data[id].description +'</p>';
-  if (window.topics_data[id].image1) {html+='<div class="img"><img class="img-responsive" alt="Loading Image..." src="'+window.topics_data[id].image1 +'"></div>';}
-  if (window.topics_data[id].image2) {html+='<div class="img"><img class="img-responsive" alt="Loading Image..." src="'+window.topics_data[id].image2 +'"></div>';}
+  if (window.topics_data[id].image1) {html+='<div class="img"><img class="img-fluid" alt="Loading Image..." src="'+window.topics_data[id].image1 +'"></div>';}
+  if (window.topics_data[id].image2) {html+='<div class="img"><img class="img-fluid" alt="Loading Image..." src="'+window.topics_data[id].image2 +'"></div>';}
   
-  if (window.topics_data[id].image3) {html+='<div class="img"><img class="img-responsive" alt="Loading Image..." src="'+window.topics_data[id].image3 +'"></div>';}
-  if (window.topics_data[id].image4) {html+='<div class="img"><img class="img-responsive" alt="Loading Image..." src="'+window.topics_data[id].image4 +'"></div>';}  
+  if (window.topics_data[id].image3) {html+='<div class="img"><img class="img-fluid" alt="Loading Image..." src="'+window.topics_data[id].image3 +'"></div>';}
+  if (window.topics_data[id].image4) {html+='<div class="img"><img class="img-fluid" alt="Loading Image..." src="'+window.topics_data[id].image4 +'"></div>';}  
   html+='</div>';
   $("#search-results").html(html);
 }
