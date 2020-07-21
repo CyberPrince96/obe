@@ -3,7 +3,7 @@ from django.db import models
 
 class Topic(models.Model):
 	id = models.AutoField(primary_key=True)
-	topic = models.CharField(max_length=30)
+	topic = models.CharField(max_length=200)
 	SUBJECT = (
 		('QuantumElectronics', 'Quantum Electronics'),
 		('VLSICircuitDesignandDeviceModeling', 'VLSI Circuit Design and Device Modeling'),
